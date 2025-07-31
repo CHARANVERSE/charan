@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CHARANVERSE</title>
+      <style>
+        #topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: purple;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+        .typing-text1,
+.typing-text2 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.typing-text1 {
+  animation: typing1 2.5s steps(30, end) forwards;
+}
+
+.typing-text2 {
+  animation: typing2 3s steps(35, end) forwards;
+  animation-delay: 2.6s;
+}
+
+@keyframes typing1 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+        main {
+  background-image: url("https://www.w3schools.com/w3images/lights.jpg"); /* Example image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 10px;
+  color: white; /* Ensures text remains readable */
+}
+
+      body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+      
+}
+#contact {
+  background-color: #1f1f1f;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.contact-details {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px;
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a0dad;
+}
+
+
+      header {
+        background-color: #2c2c2c;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2em;
+      }
+
+      main  {
+        padding: 20px;
+      }
+        main p{
+         color:white 
+        }
+      h2 {
+        color: brown;
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      div {
+        background-color: grey;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+        
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05); /* Zoom in by 5% */
+}
+
+      img {
+        border-radius: 10px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      footer {
+        background-color: #2c2c2c;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 30px;
+        }
+      div p {
+  font-weight: bold;
+  color: brown;
+  }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+     <header>
+  <h1><span class="typing-text1"></span></h1>
+  <h1><span class="typing-text2"></span></h1>
+</header>
+
+    </header>
+
+    <main>
+      <h2>About me ?</h2>
+      <p>Hey! I’m Sai Charan, a curious mind from Telangana who loves to learn new things 
+      and explore creative ideas.</p>
+      <p>I recently started my journey into web development, 
+      and I’m enjoying every step of it 👨‍💻. I’ve got strong communication skills, a background in business, and now I’m leveling up in tech!</p>
+
+      <h2>🌟In my free time I enjoy:</h2>
+      <ul>
+        <li>🎮 Playing mobile games</li>
+        <li>🎧 Listening to chill music</li>
+        <li>📱 Scrolling through Instagram & YouTube Shorts</li>
+        <li>💬 Chatting with friends and vibing to memes</li>
+      </ul>
+
+      <a href="https://www.google.com" target="_blank">Visit Google</a>
+    <button onclick="sayHello()">Click Me</button>
+<button onclick="changeBackground()">Change Background</button>
+
+      <p>My go-to apps are: Instagram, Spotify, YouTube, and ChatGPT (of course 😉)</p>
+      <p>My vibe? Calm, focused, and always ready to glow up 🔥✨.</p>
+    </main>
+
+    <h2>✨ My World in Pictures ✨</h2>
+
+    <div>
+      <img src="https://www.w3schools.com/w3images/workbench.jpg" alt="Gaming or working desk" width="300">
+      <p>Gaming mode – time to level up 🎮</p>
+    </div>
+
+    <div>
+      <img src="https://www.w3schools.com/w3images/sound.jpg" alt="Listening to music" width="300">
+      <p>Chill music – headphones on, world off 🎧</p>
+    </div>
+
+    <div>
+      <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Phone and city lights" width="300">
+      <p>Scrolling Instagram & Shorts – my quick escape 📱</p>
+    </div>
+
+    <div>
+      <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Creative thinker" width="300">
+      <p>Dreaming big – calm, focused, and glowing up ✨</p>
+    </div>
+<section id="contact">
+  <h2>📬 Contact Me</h2>
+
+  <div class="contact-details">
+    <p>📞 Phone: +91 9347914773</p>
+    <p>📧 Email: saicharanvarma5@gmail.com</p>
+  </div>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+    <footer>
+      <p>“Made with ❤️ by Charan” © 2025</p>
+    </footer>
+   
+<script>
+  function sayHello() {
+    alert("Hello friends! Welcome to charan verse 👋");
+  }
+</script>
+   <script>
+  function changeBackground() {
+    const body = document.body;
+    if (body.style.backgroundColor === "rgb(26, 26, 26)") {
+      // If it's already dark, change back to light
+      body.style.backgroundColor = "#f9f9f9";
+      body.style.color = "#333";
+    } else {
+      // Otherwise, make it dark
+      body.style.backgroundColor = "#1a1a1a";
+      body.style.color = "white";
+    }
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const line1 = "🌟 HEY, I'm Charan!";
+    const line2 = "🌠 Just a dreamer learning to code.";
+
+    document.querySelector(".typing-text1").textContent = line1;
+    document.querySelector(".typing-text2").textContent = line2;
+  });
+</script>
+    <button onclick="topFunction()" id="topBtn">⬆️</button>
+
+<script>
+  // Show button when scrolled down
+  window.onscroll = function() {
+    document.getElementById("topBtn").style.display =
+      window.scrollY > 100 ? "block" : "none";
+  };
+
+  // Scroll to top smoothly
+  function topFunction() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+  </body>
+</html>
